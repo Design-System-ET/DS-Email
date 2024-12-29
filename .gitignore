@@ -1,0 +1,19 @@
+# Archivos y configuraciones de NetBeans
+nbproject/private/
+build/
+dist/
+.nb-gradle/
+
+# Archivos generados
+*.class
+*.jar
+*.war
+*.ear
+config.json
+
+# Carpeta de salida de Maven
+target/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db

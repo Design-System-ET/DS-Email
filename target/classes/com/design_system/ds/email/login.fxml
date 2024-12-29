@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.design_system.ds.email.Login">
+   <children>
+      <Pane VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="128.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/LOGO%20MODERNO.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="primaryButton" layoutX="239.0" layoutY="398.0" onAction="#Login" prefHeight="30.0" prefWidth="114.0" text="Login" />
+            <TextField fx:id="user_login" layoutX="198.0" layoutY="202.0" onMouseClicked="#showMsg" prefHeight="26.0" prefWidth="197.0" promptText="User" style="-fx-background-color: white;" />
+            <Label layoutX="220.0" layoutY="131.0" text="DS Email">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="266.0" layoutY="353.0" onMouseClicked="#Register" styleClass="register" stylesheets="@../../../../styles/style.css" text="Registrarse" textFill="#3331c7" />
+            <PasswordField fx:id="password_login" layoutX="198.0" layoutY="242.0" onMouseClicked="#showMsg" prefHeight="25.0" prefWidth="197.0" promptText="Password" />
+            <TextField fx:id="node" layoutX="198.0" layoutY="281.0" onMouseClicked="#showMsg" prefHeight="25.0" prefWidth="197.0" promptText="Connection" />
+            <Label fx:id="msg_login" layoutX="-1.0" layoutY="325.0" prefHeight="17.0" prefWidth="590.0" styleClass="label-center" stylesheets="@../../../../styles/style.css" textFill="#df1818" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
