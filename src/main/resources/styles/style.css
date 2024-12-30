@@ -30,3 +30,8 @@
     -fx-alignment: center; /* Centrar texto */
     -fx-text-alignment: center; /* Centrar líneas de texto en etiquetas multilínea */
 }
+
+.label-left{
+    -fx-alignment: left; /* Centrar texto */
+    -fx-text-alignment: left; /* Centrar líneas de texto en etiquetas multilínea */
+}
